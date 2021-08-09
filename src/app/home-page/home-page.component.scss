@@ -1,0 +1,31 @@
+div {
+  background-size: 100% auto;
+}
+
+.nav-link{
+  font-family: Swis721 LtEx BT;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.215em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.nav-link:hover{
+  color: #ED3C2E;
+}
+
+.navbar-nav{
+  margin: 40px 160px;
+  display: flex;
+}
+.nav-item{
+  flex: 1 1 auto;
+  margin: 0 16px;
+}
+
+.active{
+  border-bottom: 1px solid #ED3C2E;
+}
