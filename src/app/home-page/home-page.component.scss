@@ -1,7 +1,5 @@
-div {
-  background-size: 100% auto;
-}
 
+//navbar
 .nav-link{
   font-family: Swis721 LtEx BT;
   font-style: normal;
@@ -18,14 +16,98 @@ div {
 }
 
 .navbar-nav{
-  margin: 40px 160px;
+  margin: 60px 12.5%;
   display: flex;
 }
 .nav-item{
   flex: 1 1 auto;
-  margin: 0 16px;
+  margin: 0 24px;
 }
 
 .active{
   border-bottom: 1px solid #ED3C2E;
 }
+
+//images and animations
+.logo{
+  height: 700px;
+  overflow: hidden !important;
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  max-width: 100% !important;
+
+}
+.top-animation{
+  position: absolute;
+  width: 19.4vw;
+  height: 0.98*19.4vw;
+  left: 40%;
+  top: 246px;
+  z-index: 0;
+}
+// METALIS
+
+.etalis{
+  position: absolute;
+  width: 51.4vw;
+  height: 0.087*51.4vw;
+  left: 23vw;
+  top: 384px;
+}
+.m-behind{
+  position: absolute;
+  width: 162px;
+  height: 87px;
+  left: 13.8%;
+  top: 383px;
+  z-index: 0;
+}
+
+.m-beyond{
+  position: absolute;
+  width: 167px;
+  height: 87px;
+  left: 13.7%;
+  top: 383px;
+  z-index: 3;
+}
+.wale-1{
+
+
+  left: 0px;
+  top: 288.1px;
+  z-index: 1;
+
+}
+.wale-2{
+
+  left: -23px;
+  top: 438px;
+  z-index: 2;
+
+}
+.wale-3{
+
+
+  left: -31px;
+  top: 569.82px;
+  z-index: 3;
+
+}
+.wale-4{
+
+
+  left: -71px;
+  top: 735px;
+  z-index: 4;
+}
+//content
+
+.content{
+  margin-left: 15%;
+  margin-right: 15%;
+  max-width: 60%;
+  color: #FFFFFF;
+}
+
+
