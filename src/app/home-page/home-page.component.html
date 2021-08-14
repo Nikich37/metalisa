@@ -1,85 +1,175 @@
-
+<div class="page">
   <!--header-->
   <section class="header">
-    <nav class="navbar navbar-expand-sm">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" style="color: #ED3C2E" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">SERVICES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">OUR TEAM</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          <nav class="navbar navbar-expand-sm" >
+<!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" [class.active]="isHomeActive" (click)="homeClick()">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" [class.active]="isServicesActive" (click)="servicesClick()">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" [class.active]="isOurTeamActive" (click)="ourTeamClick()">OUR TEAM</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  [class.active]="isContactUsActive" (click)="contactUsClick()">CONTACT US</a>
+                </li>
+              </ul>
+<!--            </div>-->
+
+          </nav>
+
   </section>
   <!--content-->
-  <div class="content">
-    <div class="logo">
-      <img src="assets/animations/top-animation.gif" class="top-animation" alt="">
-      <img src="assets/images/etalis.png" class="etalis" alt="">
-      <img src="assets/images/m-beyond.png" class="m-behind" alt="">
-      <img src="assets/images/m-behind.png" class="m-beyond" alt="">
-      <img src="assets/images/wale-1.png" class="wale-1" alt="">
-      <img src="assets/images/wale-2.png" class="wale-2" alt="">
-      <img src="assets/images/wale-3.png" class="wale-3" alt="">
-      <img src="assets/images/wale-4.png" class="wale-4" alt="">
-    </div>
-    <section class="services">
-      <h2>Рецепт быстрого приготовления хумуса.</h2>
 
-      <p>Хумус — быстро, вкусно, — и ничего лишнего. Этот рецепт был составлен из других рецептов, которые мне
-        попадались
-        в течение многих лет.</p>
+  <div class="logo">
+    <p class="top-animation"><img class="top-animation-img" src="assets/animations/top-animation.gif" alt=""></p>
+    <img src="assets/images/etalis.png" class="etalis" alt="">
+    <img src="assets/images/m-beyond.png" class="m-behind" alt="">
+    <img src="assets/images/m-behind.png" class="m-beyond" alt="">
+    <img src="assets/images/wale-1.png" class="wale-1" alt="">
+    <img src="assets/images/wale-2.png" class="wale-2" alt="">
+    <img src="assets/images/wale-3.png" class="wale-3" alt="">
+    <img src="assets/images/wale-4.png" class="wale-4" alt="">
+    <img src="assets/images/a.png" class="a" alt="">
 
-      <p style="font-style: italic;">Хумус — это вкусная густая паста, широко используемая в Греческих и Ближневосточных
-        блюдах. Очень вкусно есть его с салатами, мясом на гриле и питой.</p>
-
-      <h3>Ингредиенты</h3>
-      <ul>
-        <li>1 банка (400г) турецкого гороха (или бараньего гороха)</li>
-        <li>175г тахини</li>
-        <li>6 вяленых томатов</li>
-        <li>Половинка красного перца</li>
-        <li>Щепотка кайенского перца</li>
-        <li>1 зубчик чеснока</li>
-        <li>Чуть-чуть оливкового масла</li>
-      </ul>
-      <h3>Рецепт</h3>
-      <ol>
-        <li>Очистите чеснок от кожуры и крупно нарежьте.</li>
-        <li>Удалите стебель и семена у перца; крупно нарежьте перец.</li>
-        <li>Добавьте все ингредиенты в пищевой комбайн.</li>
-        <li>Измельчите все ингредиенты до состояния пасты.</li>
-        <li>Если вы хотите "грубый" хумус, измельчайте пару минут.</li>
-        <li>Если вам нужен гладкий хумус, измельчайте дольше.</li>
-      </ol>
-      <p style="font-style: italic;">По вкусу вы также можете добавить в небольших количествах лимон с кориандром, перец
-        чили, лайм с чипотле, хариссу с мятой или же шпинат с брынзой. Попробуйте и решите, что подойдёт вам.
-      <p>
-
-      <h3>Хранение</h3>
-
-      <p>Храните хумус в запечатанном контейнере в холодильнике. Хумус хранится примерно неделю после приготовления.
-        Если
-        он начнёт пениться, выкидывайте его.</p>
-
-      <h4>Хумус можно хранить в морозильном отделении 2–3 месяца.</h4>
-    </section>
-    <section class="our-team">
-
-    </section>
-    <div class="form-group">
-
-    </div>
   </div>
-  <!--footer-->
+  <div class="content">
+
+    <div class="services">
+      <h2 style="z-index: 99">SERVICES</h2>
+      <div class="services-table">
+        <div class="services-rows">
+          <div class="services-item">
+            <p class="services-icon"><img src="assets/images/audit-icon.png" alt=""></p>
+            <p class="services-ellipse"><img src="assets/images/ellipse.png" alt=""></p>
+            <h3 class="services-header">Audit & Consulting</h3>
+            <p class="services-description">Our consultants will map out a web portal solution that’s right for your
+              business case. Through analyzing your corporate environment, project requirements, and end users’ needs,
+              we
+              pick the best-fitting technologies and elaborate the portal’s architecture, features, and required
+              integrations.</p>
+          </div>
+          <div class="services-item">
+            <p class="services-icon"><img src="assets/images/web-icon.png" alt=""></p>
+            <p class="services-ellipse"><img src="assets/images/ellipse.png" alt="">
+            <h3 class="services-header">Web portal design</h3>
+            <p class="services-description">Drawing on the portal objectives, target users and intended functionality,
+              Itransition’s team delivers user-friendly web portal design. We will prototype your future solution step
+              by step, starting with user behavior research and information architecture and proceeding with creating a
+              unique look and feel of the portal, reinforcing it with brand-inspired graphics.</p>
+          </div>
+          <div class="services-item">
+            <p class="services-icon"><img src="assets/images/development-icon.png" alt=""></p>
+            <p class="services-ellipse"><img src="assets/images/ellipse.png" alt="">
+            <h3 class="services-header">Development</h3>
+            <p class="services-description">We will bring to life your platform-based or custom-made web portal,
+              meticulously following the outlined concept, architecture, and design prototype. Adopters of DevOps
+              practices, we ensure process transparency, fast-paced delivery, and reduced quality-related risks.</p>
+          </div>
+          <div class="services-item">
+            <p class="services-icon"><img src="assets/images/reengin-icon.png" alt=""></p>
+            <p class="services-ellipse"><img src="assets/images/ellipse.png" alt="">
+            <h3 class="services-header">Reengineering</h3>
+            <p class="services-description">Our engineers will revitalize your outdated web portal, taking away all the
+              irrelevant, botched or cumbersome features while preserving its signature functionality. Depending on the
+              project needs, we can also refactor the portal’s code to strengthen its fault tolerance and overall
+              performance.</p>
+          </div>
+          <div class="services-item">
+            <p class="services-icon-migration"><img src="assets/images/migration-icon.png" alt=""></p>
+            <p class="services-ellipse"><img src="assets/images/ellipse.png" alt="">
+            <h3 class="services-header">Migration</h3>
+            <p class="services-description">When a legacy solution no longer sustains your evolving business needs, we
+              will help migrate your portal to another more relevant and higher-capacity platform. Following a carefully
+              laid-out migration strategy, Itransition’s developers will transfer the portal data, set up the
+              destination
+              environment, and run comprehensive testing to assure against version conflicts, errors, and data loss.</p>
+          </div>
+          <div class="services-item">
+            <p class="services-icon"><img src="assets/images/integration-icon.png" alt=""></p>
+            <p class="services-ellipse"><img src="assets/images/ellipse.png" alt="">
+            <h3 class="services-header">Integration</h3>
+            <p class="services-description">Our team will embed your web portal into the corporate environment,
+              seamlessly
+              connecting it with the associated solutions and services, be it your internal systems such as ERPs, CRMs,
+              POS, etc. or third-party modules to enhance your portal functionality.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <section class="our-team">
+      <h2 style="z-index: 1; position: relative;">OUR TEAM</h2>
+      <p class="our-team-animation"><img class="our-team-animation-img" src="assets/animations/our-team.gif" alt=""></p>
+      <div class="our-team-table">
+        <div class="our-team-item">
+          <p class="our-team-image"><img src="assets/images/lera.png" alt=""></p>
+          <h3 class="our-team-name">Valeryia Kharytonchyk</h3>
+          <p class="our-team-description">UI/UX designer</p>
+        </div>
+        <div class="our-team-item">
+          <p class="our-team-image"><img src="assets/images/pasha.png" alt=""></p>
+          <h3 class="our-team-name">Pavel Metelsky</h3>
+          <p class="our-team-description">Team lead</p>
+        </div>
+        <div class="our-team-item">
+          <p class="our-team-image"><img style="margin-bottom: 37px" src="assets/images/lesha.png" alt=""></p>
+          <h3 class="our-team-name">Alexey Metelsky</h3>
+          <p class="our-team-description">Project manager</p>
+        </div>
+      </div>
+    </section>
+    <div class="contact-us">
+      <h2>CONTACT US</h2>
+      <div class="contact-us-table">
+        <div class="telephone-block">
+          <div class="telephone-item">
+            <h3>United States</h3>
+            <p class="telephone-number">720 207 2820 </p>
+            <p class="telephone-description">Sales inquiries</p>
+          </div>
+          <div class="telephone-item">
+            <h3>United Kingdom</h3>
+            <p class="telephone-number">44 203 687 2281</p>
+            <p class="telephone-description">General inquiries</p>
+          </div>
+          <div class="telephone-item">
+            <p class="telephone-number">44 203 687 2282</p>
+            <p class="telephone-description">Sales inquiries</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <input class="inp" type="text" placeholder="Full name">
+            <input class="inp" type="text" placeholder="E-mail">
+            <input class="inp" type="text" placeholder="Phone number">
+            <input class="inp" type="text" placeholder="Company">
+            <textarea placeholder="Describe your idea"></textarea>
+            <button type="submit">
+
+              <img class="button" src="assets/images/btn.png" alt="">
+              <img class="btn-border" src="assets/images/btn-border.png" alt="">
+              <img class="btn-border-2" src="assets/images/btn-border-2.png" alt="">
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="bottom-gif"><img class="bottom-gif-img" src="assets/animations/bottom.gif" alt=""></p>
+      <img class="bottom-wale-1" src="assets/images/bottom-wale-1.png" alt="">
+      <img class="bottom-wale-2" src="assets/images/bottom-wale-2.png" alt="">
+      <img class="bottom-wale-3" src="assets/images/bottom-wale-3.png" alt="">
+      <img class="bottom-wale-4" src="assets/images/bottom-wale-4.png" alt="">
+      <p class="bottom-metalisa"><img src="assets/images/bottom-metalisa.png" alt=""></p>
+      <img class="footer-background" src="assets/images/footer-background.png" alt="">
+    </div>
+
+  </div>
+</div>
+<!--footer-->
 
 

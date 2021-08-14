@@ -3,6 +3,11 @@ body{
   background-color: black !important;
 }
 
+@font-face {
+  font-family: Acumin Pro;
+  src: url(assets/fonts/Acumin-BdPro.otf) format("opentype");
+}
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
